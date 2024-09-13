@@ -1,38 +1,122 @@
+/* App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  background-color: #F0F0F0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #D50A0A; /* AFC Red */
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 2px solid #A5ACAF; /* Silver border */
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #013369; /* NFC Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #D50A0A; /* AFC Red */
+}
+
+.picks-container {
+  margin-top: 20px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.picks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.picks-table th,
+.picks-table td {
+  border: 1px solid #E0E0E0;
+  padding: 10px;
+  text-align: left;
+}
+
+.picks-table th {
+  background-color: #F0F0F0;
+  font-weight: bold;
+}
+
+.picks-table tr:nth-child(even) {
+  background-color: #F9F9F9;
+}
+
+.picks-table tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+.pick-table {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.table-header, .table-row {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-header {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-row div {
+  flex: 1;
+  text-align: center;
+}
+
+.eliminated-teams {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.eliminated-teams li {
+  list-style: none;
+  padding: 5px 0;
 }
